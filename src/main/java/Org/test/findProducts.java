@@ -55,6 +55,8 @@ public class findProducts {
 				
 				hSet.add(productName);
 				
+				
+				
 			}
 			
 			System.out.println("Products without duplicates : "+hSet.size()+"\n");
