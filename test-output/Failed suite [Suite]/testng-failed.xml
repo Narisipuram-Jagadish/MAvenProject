@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="Org.testcases.TestNGRetryFeature">
+        <methods>
+          <include name="TC2"/>
+        </methods>
+      </class> <!-- Org.testcases.TestNGRetryFeature -->
+      <class name="Org.testcases.TestNGRetry">
+        <methods>
+          <include name="TC7"/>
+        </methods>
+      </class> <!-- Org.testcases.TestNGRetry -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

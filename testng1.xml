@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SystemTest">
+  <test thread-count="5" name="IntegrationTest">
+  	<groups>
+  		<run>
+  			<include name ="Sanitytest"/>
+  			<include name ="RegressionTest"/>
+  		</run>
+  	</groups>
+   
+    <classes>   	
+    	<class name="Org.testcases.TestNGgrpFeatures2"></class>
+    	<class name="Org.testcases.TestNGgrpFeatures"></class>    	 
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- SystemTest -->
+
+
+
+
+
+
