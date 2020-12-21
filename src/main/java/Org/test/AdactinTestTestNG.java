@@ -37,12 +37,11 @@ public class AdactinTestTestNG extends BaseClass{
 		clickElement(login.getLoginButton());
 		
 	}
+	
 	@DataProvider
 	public void getTestData() {
-		
-		
+			
 	}
-	
 	
 	@Test(priority=2)
 	public void validateAdactinImage(){
@@ -68,6 +67,5 @@ public class AdactinTestTestNG extends BaseClass{
 		clickElement(searchPage.getSearchButton());
 		
 	}
-	
-	
+
 }

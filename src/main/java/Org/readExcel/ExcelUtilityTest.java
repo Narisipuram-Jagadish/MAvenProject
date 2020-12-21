@@ -25,7 +25,6 @@ public class ExcelUtilityTest {
 		int rowCount = reader.getRowCount(sheetName);
 		System.out.println("total rows: "+ rowCount);
 		
-		
 		//Add Column
 		
 		reader.addColumn(sheetName, "Username");
@@ -37,29 +36,38 @@ public class ExcelUtilityTest {
 		rowCount = reader.getRowCount(sheetName);
 		System.out.println("total rows: "+ rowCount);
 		
-		/*
 		
-		System.out.println(reader.getCellData(sheetName, "username", 3));
-		String data = reader.getCellData(sheetName, 0, 2);
-		System.out.println(data);
+		//Add data 
+		reader.setCellData(sheetName, "Username", rowCount+1, "Rupesh-villuri");
+		reader.setCellData(sheetName, "Password", rowCount+1, "NTR@1");
+
+		 
+		rowCount = reader.getRowCount(sheetName);
+		System.out.println("total rows: "+ rowCount);
 		
+		//Add data 
+		reader.setCellData(sheetName, "Username", rowCount+1, "Rupesh-Baahubali");
+		reader.setCellData(sheetName, "Password", rowCount+1, "Prabhas@123");
+
+		rowCount = reader.getRowCount(sheetName);
+		System.out.println("total rows: "+ rowCount);
 		
+		//Reading cell data
 		
-		
-		
-		
-		reader.setCellData(sheetName, "status", 2, "PASS");
-		
-		System.out.println(reader.getColumnCount(sheetName));
+
+		//printing 1nd set
+		System.out.println("printing 1st set");
+		System.out.println(reader.getCellData(sheetName, "Username", 2));
+		System.out.println(reader.getCellData(sheetName, "Password", 2) +"\n");
+
+		//printing 2nd set using column name
+		System.out.println("printing 2nd set using column name");
+		System.out.println(reader.getCellData(sheetName, "Username", 3));
+		System.out.println(reader.getCellData(sheetName, "Password", 3));
+	
 		
 		//reader.removeColumn("Regsitration", 0);
-		
-		System.out.println(reader.getCellData("Regsitration", "phonenumber", 2));
-		System.out.println(reader.getCellData("Regsitration", "age", 2));
 
-		*/
-		
-		
 	}
 
 }

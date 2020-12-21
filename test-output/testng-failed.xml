@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="2" name="InternetExplorerTest(failed)" parallel="tests">
-    <parameter name="password" value="8143895200"/>
-    <parameter name="browser" value="ie"/>
-    <parameter name="username" value="jagadish93"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Org.testcases.TestNGParameters">
+      <class name="Org.testcases.Comtestngpractice2">
         <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="setUp"/>
+          <include name="Facebooklink"/>
+          <include name="CloseBrowser"/>
+          <include name="checktheloginpage"/>
+          <include name="buttoncheck"/>
+          <include name="verfyinglink"/>
+          <include name="CreateNewAccountButtonCheck"/>
+          <include name="SignupforFacebook"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Org.testcases.TestNGParameters -->
+      </class> <!-- Org.testcases.Comtestngpractice2 -->
     </classes>
-  </test> <!-- InternetExplorerTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
