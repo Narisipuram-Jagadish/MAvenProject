@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+
+<suite name="Suite"  verbose="1">
 
 	<listeners>
 		<listener class-name="TestAnalyzer.AllFailedTests"/>
+		<listener class-name="TestListeners.TestNGListener"/>	
 	</listeners>
 
 	 <test thread-count="5" name="RetryFailedTestCases">
 	    <classes>
-	      <class name="Org.testcases.TestNGRetry"/>
-	      <class name="Org.testcases.TestNGRetryFeature"/>
+		      <class name="Org.testcases.TestNGRetryFeature"></class>
+		      <class name="Org.testcases.TestNGRetry"></class>
 	    </classes>
 	 </test> <!-- Test -->
 	 

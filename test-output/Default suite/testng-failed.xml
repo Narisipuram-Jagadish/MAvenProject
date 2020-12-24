@@ -3,18 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Org.testcases.Comtestngpractice2">
+      <class name="Org.testcases.TestNGRetryFeature">
         <methods>
-          <include name="Facebooklink"/>
-          <include name="CloseBrowser"/>
-          <include name="checktheloginpage"/>
-          <include name="buttoncheck"/>
-          <include name="verfyinglink"/>
-          <include name="CreateNewAccountButtonCheck"/>
-          <include name="SignupforFacebook"/>
-          <include name="setup"/>
+          <include name="TC2"/>
         </methods>
-      </class> <!-- Org.testcases.Comtestngpractice2 -->
+      </class> <!-- Org.testcases.TestNGRetryFeature -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,7 @@
 package Org.testcases;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 public class TestNGRetry {
@@ -21,11 +22,6 @@ public class TestNGRetry {
 		Assert.assertEquals("actual"
 				, "expecting",
 				"Assertion message");
-	}
-	
-	@Test
-	public void TC8() {
-		System.out.println("TC 8");
 	}
 
 }

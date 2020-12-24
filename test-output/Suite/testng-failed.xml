@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="ChromeTest(failed)">
-    <parameter name="password" value="8143895200"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="username" value="jagadish93"/>
+  <listeners>
+    <listener class-name="TestAnalyzer.AllFailedTests"/>
+    <listener class-name="TestListeners.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="RetryFailedTestCases(failed)">
     <classes>
-      <class name="Org.testcases.TestNGDataProviders">
+      <class name="Org.testcases.TestNGRetry">
         <methods>
-          <include name="SearchData"/>
-          <include name="setUp"/>
+          <include name="TC7"/>
         </methods>
-      </class> <!-- Org.testcases.TestNGDataProviders -->
+      </class> <!-- Org.testcases.TestNGRetry -->
+      <class name="Org.testcases.TestNGRetryFeature">
+        <methods>
+          <include name="TC2"/>
+        </methods>
+      </class> <!-- Org.testcases.TestNGRetryFeature -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- RetryFailedTestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->
