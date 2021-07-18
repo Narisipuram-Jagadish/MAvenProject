@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="2" name="InternetExplorerTest(failed)" parallel="tests">
-    <parameter name="password" value="8143895200"/>
-    <parameter name="browser" value="ie"/>
-    <parameter name="username" value="jagadish93"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="TestAnalyzer.AllFailedTests"/>
+    <listener class-name="TestListeners.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="RetryFailedTestCases(failed)">
     <classes>
-      <class name="Org.testcases.TestNGParameters">
+      <class name="Org.testcases.TestNGRetry">
         <methods>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="setUp"/>
+          <include name="TC7"/>
         </methods>
-      </class> <!-- Org.testcases.TestNGParameters -->
+      </class> <!-- Org.testcases.TestNGRetry -->
+      <class name="Org.testcases.TestNGRetryFeature">
+        <methods>
+          <include name="TC2"/>
+        </methods>
+      </class> <!-- Org.testcases.TestNGRetryFeature -->
     </classes>
-  </test> <!-- InternetExplorerTest(failed) -->
+  </test> <!-- RetryFailedTestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

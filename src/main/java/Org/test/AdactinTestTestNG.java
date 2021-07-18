@@ -1,6 +1,5 @@
 package Org.test;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -37,12 +36,11 @@ public class AdactinTestTestNG extends BaseClass{
 		clickElement(login.getLoginButton());
 		
 	}
+	
 	@DataProvider
 	public void getTestData() {
-		
-		
+			
 	}
-	
 	
 	@Test(priority=2)
 	public void validateAdactinImage(){
@@ -68,6 +66,5 @@ public class AdactinTestTestNG extends BaseClass{
 		clickElement(searchPage.getSearchButton());
 		
 	}
-	
-	
+
 }

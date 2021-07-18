@@ -17,15 +17,13 @@ public class Search1 extends BaseClass{
 			PageFactory.initElements(driver,this);
 		}
 		
-	
 		//this xpath identifying all select dropdowns, i can use list for these to identify uniquely
 		//if i write only WebElement locatorname , it will identify the first matching.
 		//I am using for 1st 2 elements
 		@FindBy(xpath="//select[@class='search_combobox']")
 		private List<WebElement> LocationHotel;
 		
-		
-		
+	
 		//Acts like And operator.(All the locators must satisfy to uniquely identify)
 		@FindBys({
 			
@@ -67,7 +65,6 @@ public class Search1 extends BaseClass{
 			@FindBy(xpath="//input[@id='datepick_in']")
 		})
 		private WebElement checkinDate;
-		
 		
 		
 		//Even matching element is only one we can use like this with List
@@ -113,9 +110,7 @@ public class Search1 extends BaseClass{
 			return checkOutDate;
 		}
 
-
 		public WebElement getSearchButton() {
 			return SearchButton;
-		}
-		
+		}		
 }

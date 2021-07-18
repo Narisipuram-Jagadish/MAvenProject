@@ -16,14 +16,4 @@ public class TestNGRetryFeature {
 		Assert.assertTrue(false);
 	}
 	
-	@Test(priority=2)
-	public void TC3() {
-		System.out.println("TC 3");
-	}
-	
-	@Test(priority=-3 )
-	public void TC4() {
-		System.out.println("TC 4");
-	}
-
 }

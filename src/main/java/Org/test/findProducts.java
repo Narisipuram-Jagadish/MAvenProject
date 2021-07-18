@@ -49,15 +49,15 @@ public class findProducts {
 			 System.out.println("Total Products : "+products.size()+"\n");
 			
 			 
-			for (WebElement option : products) {
+			for (WebElement option : products) 
+			{
 				
 				String productName=option.getText();
 				
-				hSet.add(productName);
-				
-				
-				
+				hSet.add(productName);	
 			}
+			
+			
 			
 			System.out.println("Products without duplicates : "+hSet.size()+"\n");
 			

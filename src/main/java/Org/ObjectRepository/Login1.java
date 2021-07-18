@@ -12,7 +12,7 @@ import Org.Base.BaseClass;
 
 public class Login1 extends BaseClass {
 	
-public Login1() {
+	public Login1() {
 		
 		PageFactory.initElements(driver,this);
 	}

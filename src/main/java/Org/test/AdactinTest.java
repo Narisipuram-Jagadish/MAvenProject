@@ -44,7 +44,6 @@ public class AdactinTest extends BaseClass{
 		
 		clickElement(searchPage.getSearchButton());
 
-
 	}
 
 }
